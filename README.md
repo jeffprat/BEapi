@@ -16,15 +16,16 @@ would you hide it? You have several options:
     secret exists inside the App, and anyone who know the App’s password
     can reveal the secret; that password is stored on the phone.
 
-In all cases, your secret depends on some other secret, that is stored
-on the phone and poses a security risk to you.
+The problem with such solutions is that your secret depends on some other secret which is stored
+on the mobile-device and poses a security risk.
 
 # 2. The BEapi solution
 
 With BEapi, your secret is not stored at all. Rather, it is
 used to modify Machine Learning biometric classification models so that
 it can only be revealed using *<u>your biometrics</u>*. 
-Biometric features can be generated from facial images (e.g., using openCV), fingerprints, etc.
+
+Note that BEapi is *not* about  *generating* Biometric features; they can be generated from facial images (e.g., using openCV), fingerprints, iris features, etc. Rather, BEapi *is* about secret hiding using given feature files.
 
 # 3. How does BEapi work?
 
