@@ -23,7 +23,8 @@ on the phone and poses a security risk to you.
 
 With BEapi, your secret is not stored verbatim at all. Rather, it is
 used to modify Machine Learning biometric classification models so that
-it can only be revealed using *<u>your biometrics</u>*.
+it can only be revealed using *<u>your biometrics</u>*. 
+Biometric features can be generated from facial images (e.g., using openCV), fingerprints, etc.
 
 # 3. How does BEapi work?
 
@@ -122,7 +123,7 @@ This example uses absolute file paths instead of relative file paths.
 All files a comma-separated (csv) files. The train and test files are
 specified in properties.txt and are used by Hide. The runtime
 feature-vector file is specified as a command-line argument to Reveal
-(see section 5.2).
+(see section 5.2). Samples of all three types of files are provided in this repo.
 
 -   The train file (e.g., sample_data/sample_train.txt specified in
     section 5.1.1) should contain *Train_M* rows of *numFeatures*
