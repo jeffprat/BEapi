@@ -1,4 +1,4 @@
-# Biometric Encryption API – BEapi.jar
+# BioEncryption: Biometric Encryption 
 
 # 1. What problem does it solve?
 
@@ -19,17 +19,17 @@ would you hide it? You have several options:
 The problem with such solutions is that your secret depends on some other secret which is stored
 on the mobile-device and poses a security risk.
 
-# 2. The BEapi solution
+# 2. The BioEncryption solution
 
-With BEapi, your secret is not stored at all. Rather, it is
+With BioEncryption, your secret is not stored at all. Rather, it is
 used to modify Machine Learning biometric classification models so that
 it can only be revealed using *<u>your biometrics</u>*. 
 
-Note that BEapi is *not* about  *generating* Biometric features; they can be generated from facial images (e.g., using openCV), fingerprints, iris features, etc. Rather, BEapi *is* about secret hiding using given feature files.
+Note that BioEncryption is *not* about  *generating* Biometric features; they can be generated from facial images (e.g., using openCV), fingerprints, iris features, etc. Rather, BioEncryption *is* about secret hiding using given feature files.
 
-# 3. How does BEapi work?
+# 3. How does BioEncryption work?
 
-BEapi contains wo functions, *Hide* and *Reveal*.
+BioEncryption contains wo functions, *Hide* and *Reveal*.
 
 1.  *Hide*. Hide’s inputs are your secret, and train and test (binary)
     labeled feature-files for creating Machine Learning classifier based
@@ -48,14 +48,14 @@ secret.
 
 # 4. Other applications
 
-BEapi is not restricted to biometric classification features. BEapi can
+BioEncryption is not restricted to biometric classification features. BioEncryption can
 hide a secret using any set of feature vectors. For example, the runtime
 stack trace of an App *A* can be used to hide a secret so that only *A*
 will be able to reveal it.
 
 # 5. Using Hide and Reveal
 
-Hide and Reveal are two API functions inside BEapi.jar. They are invoked
+Hide and Reveal are two API functions inside BioEncryption.jar. They are invoked
 from the command-line.
 
 ## 5.1 Hide
@@ -63,15 +63,15 @@ from the command-line.
 Hide requires two inputs: the secret, and a properties file (discussed
 below). Two examples are of executing Hide:
 
-1.  java -cp BEapi.jar Hide "Lorem ipsum dolor sit amet, consectetur
+1.  java -cp BioEncryption.jar Hide "Lorem ipsum dolor sit amet, consectetur
     ..."
 
 "Lorem ipsum dolor sit amet, consectetur ..." is the secret; it should
 be a string wrapped in quotes. In this example the properties file is
 not explicitly specified in the command-line; it therefore defaults to
-*properties.txt* that resides as a sibling file to BEapi.jar.
+*properties.txt* that resides as a sibling file to BioEncryption.jar.
 
-2.  java -cp BEapi.jar Hide "Lorem ipsum dolor sit amet, consectetur
+2.  java -cp BioEncryption.jar Hide "Lorem ipsum dolor sit amet, consectetur
     ..." /Users/jeffprat/Documents/temp/properties.txt
 
 "Lorem ipsum dolor sit amet, consectetur ..." is the secret; it should
@@ -107,14 +107,14 @@ explicitly specified in the command-line using an absolute path.
 
 Two examples are of executing Reveal:
 
-1.  java -cp BEapi.jar Reveal JohnDoeModel.be sample_data/runtime_0.txt
+1.  java -cp BioEncryption.jar Reveal JohnDoeModel.be sample_data/runtime_0.txt
 
 *JohnDoeModel.be* is the relative path model file that Hide generated
 (see section 5.5.1), and *sample_data/runtime_0.txt* is the (relative
 path) runtime feature-vector file – its format is discussed in section
 5.3.
 
-2.  java -cp BEapi.jar Reveal /Users/jeffprat/Documents/JohnDoeModel.be
+2.  java -cp BioEncryption.jar Reveal /Users/jeffprat/Documents/JohnDoeModel.be
     /Users/jeffprat/Documents/sample_data/runtime_0.txt
 
 This example uses absolute file paths instead of relative file paths.
