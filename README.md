@@ -85,8 +85,8 @@ explicitly specified in the command-line using an absolute path.
 > example values:
 
 -   numFeatures = 500 \#number of features; each train-file row and and
-    test-file row must have this amount of (comma-separated) features
-    and a "Y=n" at the end, with n being 1 or 0
+    test-file row must have this number of (comma-separated) features,
+    followed by a (comma-separated) "Y=n" at the end, with n being 1 or 0
 
 -   Train_M = 1000 \#number of training rows, each row is
     comma-separated list of "numFeatures" features
@@ -124,7 +124,7 @@ This example uses absolute file paths instead of relative file paths.
 All files a comma-separated (csv) files. The train and test files are
 specified in properties.txt and are used by Hide. The runtime
 feature-vector file is specified as a command-line argument to Reveal
-(see section 5.2). Samples of all three types of files are provided in this repo.
+(see section 5.2). Samples of all three types of files are provided in the *sample_data* folder.
 
 -   The train file (e.g., sample_data/sample_train.txt specified in
     section 5.1.1) should contain *Train_M* rows of *numFeatures*
@@ -140,7 +140,7 @@ feature-vector file is specified as a command-line argument to Reveal
 
 # 6. Licensing
 
-The version on github is an *evaluation version*. Reveal with work only
+The version on github is an *evaluation version*. Reveal will work only
 within one week of performing Hide. Besides evaluating the product you
 cannot distribute or otherwise use it.
 
