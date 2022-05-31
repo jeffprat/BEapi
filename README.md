@@ -1,6 +1,6 @@
 # BioEncryption: Biometric Encryption 
 
-# 1. What problem does it solve?
+# 1. What Problem Does BioEncryption Solve?
 
 Suppose you have a secret on your mobile device you want to hide. How
 would you hide it? You have several options:
@@ -19,7 +19,7 @@ would you hide it? You have several options:
 The problem with such solutions is that your secret depends on some other secret which is stored
 on the mobile-device and poses a security risk.
 
-# 2. The BioEncryption solution
+# 2. The BioEncryption Solution
 
 With BioEncryption, your secret is not stored at all. Rather, it is
 used to modify Machine Learning biometric classification models so that
@@ -27,7 +27,7 @@ it can only be revealed using *<u>your biometrics</u>*.
 
 Note that BioEncryption is *not* about  *generating* Biometric features; they can be generated from facial images (e.g., using openCV), fingerprints, iris features, etc. Rather, BioEncryption *is* about secret hiding using given feature files.
 
-# 3. How does BioEncryption work?
+# 3. How Does BioEncryption Work?
 
 BioEncryption contains wo functions, *Hide* and *Reveal*.
 
@@ -46,12 +46,13 @@ device once *Hide* is complete, otherwise an attacker can use a feature
 vector taken from those files as input to Reveal, thereby revealing your
 secret.
 
-# 4. Other applications
+# 4. Other Applications
 
 BioEncryption is not restricted to biometric classification features. BioEncryption can
 hide a secret using any set of feature vectors. For example, the runtime
 stack trace of an App *A* can be used to hide a secret so that only *A*
 will be able to reveal it.
+As suggested in the literature, BioEncryption can be used to hide and reveal a secret key so that no one but the legitimate user can perform digital signatures.
 
 # 5. Using Hide and Reveal
 
@@ -78,7 +79,7 @@ not explicitly specified in the command-line; it therefore defaults to
 be a string wrapped in quotes. In this example the properties file is
 explicitly specified in the command-line using an absolute path.
 
-### The properties file for Hide
+### The properties File for Hide
 
 > the properties.txt file used by Hide is a kay-value pairs file, and
 > must contain the following pairs; obviously, the values are just
