@@ -52,7 +52,8 @@ BioEncryption is not restricted to biometric classification features. BioEncrypt
 hide a secret using any set of feature vectors. For example, the runtime
 stack trace of an App *A* can be used to hide a secret so that only *A*
 will be able to reveal it.
-As suggested in the literature, BioEncryption can be used to hide and reveal a secret key so that no one but the legitimate user can perform digital signatures.
+
+As suggested in the literature, BioEncryption can also be used to hide and reveal a secret key so that no one but the legitimate user can perform digital signatures.
 
 # 5. Using Hide and Reveal
 
