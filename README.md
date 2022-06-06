@@ -96,10 +96,10 @@ explicitly specified in the command-line using an absolute path.
 -   Test_M = 1000 \#number of testing rows, each row is comma-separated
     list of "numFeatures" features
 
--   TrainFile = sample_data/sample_train.txt \# Relative path of train
+-   TrainFile = sample_data/sample_train.csv \# Relative path of train CSV
     file. It should be sibling to this this properties file
 
--   TestFile = sample_data/sample_test.txt \# Relative path of train
+-   TestFile = sample_data/sample_test.csv \# Relative path of test CSV
     file. It should be sibling to this properties file
 
 -   serializedModelFile = JohnDoeModel.be \# Name of file used for
@@ -123,20 +123,20 @@ This example uses absolute file paths instead of relative file paths.
 
 ## 5.3 Structure of train, test, and runtime feature-vector files 
 
-All files a comma-separated (csv) files. The train and test files are
-specified in properties.txt and are used by Hide. The runtime
-feature-vector file is specified as a command-line argument to Reveal
+All files a comma-separated (csv) files. The train and test CSV file paths are
+specified in properties.txt for use by the Hide operation. The runtime
+feature-vector CSV file is specified as a command-line argument to Reveal
 (see section 5.2). Samples of all three types of files are provided in the *sample_data* folder.
 
 -   The train file (e.g., sample_data/sample_train.txt specified in
     section 5.1.1) should contain *Train_M* rows of *numFeatures*
-    features, each followed by a Y=1 or Y=0 label.
+    features, each followed by a 1 or 0  classification label.
 
 -   The test file (e.g., sample_data/sample_test.txt specified in
     section 5.1.1) should contain *Test_M* rows of *numFeatures*
-    features, each followed by a Y=1 or Y=0 label.
+    features, each followed by a 1 or 0  classification label.
 
--   The runtime runtime feature-vector file should contain one row of
+-   The runtime runtime feature-vector CSV file should contain one row of
     *numFeatures* features. Obviously, being runtime classification
     feature-vector, it contains no label at the end of the row.
 
