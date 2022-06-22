@@ -5,6 +5,6 @@
 numFeatures					= 216  #number of features; each train and test row must have this amount of (comma-separated) features and a "Y=n" at the end, with n being 1 or 0  
 Train_M						= 1000 #number of training rows, each row is comma-separated list of "numFeatures" features
 Test_M						= 1000 #number of testing rows, each row is comma-separated list of "numFeatures" features
-TrainFile					= sample_data/sample_train.txt # Name of train file. It should be sibling to this this properties file 
-TestFile					= sample_data/sample_test.txt # Name of train file. It should be sibling to this properties file 
+TrainFile					= sample_data/sample_train.csv # Name of train file. It should be sibling to this this properties file 
+TestFile					= sample_data/sample_test.csv # Name of train file. It should be sibling to this properties file 
 serializedModelFile			= JohnDoeModel.be # Name of file used for serializing model
