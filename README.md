@@ -109,7 +109,7 @@ explicitly specified in the command-line using an absolute path.
 
 Two examples are of executing Reveal:
 
-1.  java -cp BioEncryption.jar Reveal JohnDoeModel.be sample_data/runtime_0.txt
+1.  java -cp BioEncryption.jar Reveal JohnDoeModel.be sample_data/sample_runtime.csv
 
 *JohnDoeModel.be* is the relative path model file that Hide generated
 (see section 5.5.1), and *sample_data/runtime_0.txt* is the (relative
@@ -117,7 +117,7 @@ path) runtime feature-vector file – its format is discussed in section
 5.3.
 
 2.  java -cp BioEncryption.jar Reveal /Users/jeffprat/Documents/JohnDoeModel.be
-    /Users/jeffprat/Documents/sample_data/runtime_0.txt
+    /Users/jeffprat/Documents/sample_data/sample_runtime.csv
 
 This example uses absolute file paths instead of relative file paths.
 
