@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/jeffprat/BioEncryption/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# BioEncryption: Biometric Encryption
+## What Problem Does BioEncryption Solve?
+Suppose you have a secret on your mobile device you want to hide. How would you hide it? You have several options:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Use a Lock/Encrypt feature on your phone. The iPhone for example, has a Lock feature which allows lock and unlock operations using the phone’s biometric authentication system. However, actual lock/unlock is performed using a password, which the iPhone stores somewhere on the device; biometric authentication only grants seamless retrieval of that password.
 
-### Markdown
+Store the secret using some password-protection App. Clearly, the secret exists inside the App, and anyone who know the App’s password can reveal the secret; that password is stored on the phone.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The problem with such solutions is that your secret depends on some other secret which is stored on the mobile-device and poses a security risk.
 
-```markdown
-Syntax highlighted code block
+## The BioEncryption Solution
+With BioEncryption, your secret is not stored at all. Rather, it is used to modify Machine Learning biometric classification models so that it can only be revealed using your biometrics.
 
-# Header 1
-## Header 2
-### Header 3
+Note that BioEncryption is not about generating Biometric features; they can be generated from facial images (e.g., using openCV), fingerprints, iris features, etc. Rather, BioEncryption is about secret hiding using given feature files.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+For more details see [https://github.com/jeffprat/BioEncryption](https://github.com/jeffprat/BioEncryption).
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jeffprat/BioEncryption/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
